@@ -1,0 +1,12 @@
+:root{
+	--size-base: 10px;
+	
+	/*titles*/
+	--size-big: clamp(4rem, 1.481vw + 3.667rem, 5rem);;
+	--size-large: clamp(3rem, 1.481vw + 2.667rem, 4rem);;
+	--size-medium: clamp(2rem, 1.739vw + 1.609rem, 3rem);
+	--size-small: clamp(2.5rem, 1.481vw + 2.167rem, 3.5rem);
+	--size-tiny: clamp(2.313rem, 1.481vw + 1.979rem, 3.313rem);
+	/*paragraph*/
+	--size-normal: clamp(1.25rem, 1.481vw + 0.917rem, 2.25rem);
+} 
