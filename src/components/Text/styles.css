@@ -1,0 +1,27 @@
+.Text {
+	font: var(--font-normal)
+}
+
+.Text--big {
+	font: var(--font-big)
+}
+
+.Text--largest {
+	font: var(--font-largest)
+}
+
+.Text--large {
+	font: var(--font-large)
+}
+
+.Text--medium {
+	font: var(--font-medium)
+}
+
+.Text--small {
+	font: var(--font-small)
+}
+
+.Text--tiny {
+	font: var(--font-tiny)
+}
