@@ -1,5 +1,5 @@
 :root{
-	--size-base: 10px;
+	--size-base: 1rem;
 	
 	/*titles*/
 	--size-big: clamp(4rem, 1.481vw + 3.667rem, 5rem);;
