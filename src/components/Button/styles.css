@@ -1,0 +1,41 @@
+.Button {
+	width: 80%;
+	height: 56px;
+
+	border: 0;
+	border-radius: 16px;
+	padding: 8px 16px;
+	
+	background-color: var(--color-primary);
+	box-shadow: 4px 4px 0px var(--color-negative);
+}
+
+
+.Button__content {
+	width: 100%;
+	height: 100%;
+	
+
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+
+	font: var(--font-normal-bold);
+	color: var(--color-zero);
+}
+
+.Button--icon {	
+	width: 32px;
+	height: 40px;
+
+	border: 0;
+	border-radius: 0;
+	padding: 0;
+
+	box-shadow: none;
+}
+
+.Button--icon > .Button__content {
+	font-size: 32px;
+}
