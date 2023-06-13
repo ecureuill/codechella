@@ -1,0 +1,26 @@
+{
+	"controls": {
+		"btn_menu": {
+			"action": {
+				"open": "abrir",
+				"close": "fechar"
+			},
+			"name": {
+				"menu": "menu"
+			},
+			"description": {
+				"open": "abrir o menu",
+				"close": "fechar o menu"
+			}
+		}
+	}, 
+	"contents": {
+		"headings": {
+			"welcome-to": "Boas-vindas ao"
+		},
+		"paragraphs": {
+
+		}
+	}
+
+}
