@@ -21,7 +21,9 @@ const Banner = ({children, image}: PropsWithChildren<BannerProps>): JSX.Element 
 				<Mobile>
 					<LogoSVG className='Banner__logo--mobile' />
 					<Button 
-						variant={'icon'} 
+						depth='2d'
+						size='tiny'
+						shape='icon'
 						aria-label='menu'
 						aria-describedby={spanId}
 						onClick={() => setOpened(!opened)}

@@ -2,13 +2,27 @@ import { HTMLAttributes, PropsWithChildren } from 'react';
 import './styles.css';
 
 interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
-	variant?: 'icon'
+	depth?: '3d' | '2d'
+	shape?: 'pill' | 'rectangle' | 'icon'
+	size?: 'fill' | 'tiny' | 'default'
+	align?: 'space-between' | 'center'
 }
 
-const Button = ( {children, variant, ...props}: PropsWithChildren<ButtonProps>): JSX.Element => {
+const Button = ( {align = 'center', children, size='default', shape='pill', depth= '3d', className,...props}: PropsWithChildren<ButtonProps>): JSX.Element => {
 	return (
-		<button className={`Button ${variant !== undefined ? `Button--${variant}` : ''}`} {...props} >
-			<div className='Button__content'>
+		<button 
+			className={`
+				Button 
+				Button--${shape} 
+				Button--${depth} 
+				Button--${size} 
+				${className}`} 
+			{...props} >
+			<div className={`
+				Button__content
+				Button__content--${align}
+			`} 
+			>
 				{children}
 			</div>
 		</button>
