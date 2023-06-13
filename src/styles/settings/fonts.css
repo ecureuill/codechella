@@ -9,11 +9,11 @@
   --font-big: 400 var(--size-big)/var(--line-big) var(--font-secondary); 
   --font-largest: 800 var(--size-large)/var(--line-large) var(--font-primary); 
   --font-large: 400 var(--size-large)/var(--line-large) var(--font-secondary); 
-  --font-medium: 500 var(--size-medium)/var(--line-medium) var(--font-primary); 
+  --font-medium: 700 var(--size-medium)/var(--line-medium) var(--font-primary);
   --font-small: 700 var(--size-small)/var(--line-small) var(--font-primary); 
-  --font-tiny: 700 var(--size-tiny)/var(--line-tiny) var(--font-primary); 
+  --font-tiny: 500 var(--size-small)/var(--line-small) var(--font-primary); 
 
-  --font-normal: 500 var(--size-normal)/var(--line-normal) var(--font-primary); 
-  --font-normal-bold: 700 var(--size-normal)/var(--line-normal) var(--font-primary); 
+  --font-normal: 500 var(--size-tiny)/var(--line-tiny) var(--font-primary); 
+  --font-normal-bold: 700 var(--size-tiny)/var(--line-tiny) var(--font-primary); 
 }
 
