@@ -25,3 +25,36 @@
 .Text--tiny {
 	font: var(--font-tiny)
 }
+
+.Text--outlined {
+	height: fit-content;
+	width: fit-content;
+	
+	display: inline;
+	padding: var(--spacing-padding-tiny);
+	position: relative;
+	
+	text-align: center;
+	color: var(--color-zero);
+
+	background-color: var(--color-secondary);
+}
+
+.Text--outlined::before, .Text--outlined::after {
+	display: flex;
+	position: absolute;	
+	top: 50%;
+	width: 100vw;
+
+	content: '';
+	background-color: var(--color-secondary);
+	border: .5px solid var(--color-secondary);
+}
+
+.Text--outlined::before {
+	left: calc(100% + var(--spacing-gap-big));
+}
+
+.Text--outlined::after {
+	right: calc(100% + var(--spacing-gap-big));
+}
