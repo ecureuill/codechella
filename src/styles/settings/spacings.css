@@ -1,0 +1,10 @@
+:root {
+	--spacing-padding-big: 120px;
+	--spacing-padding-large: 76px;
+	--spacing-padding-medium: 44px;
+	--spacing-padding-small: 24px;
+	--spacing-padding-tiny: 16px;
+
+	--spacing-gap-big: 32px;
+	--spacing-gap-small: 8px
+}
