@@ -2,10 +2,12 @@ import Accordion from './Accordion';
 import Banner from './Banner';
 import Button from './Button';
 import Card from './Card';
+import Combobox from './Combobox';
+import Input from './Input';
 import Mobile from './MediaQuery/Mobile';
 import NavBar from './NavBar';
 import Text from './Text';
 
 
-export { Accordion, Banner, Card, Button, Mobile, NavBar, Text };
+export { Accordion, Banner, Card, Combobox, Button, Input, Mobile, NavBar, Text };
 

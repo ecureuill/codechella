@@ -1,0 +1,33 @@
+.Combobox {
+	width: 100%;
+	
+	display: inline-flex;
+	flex-direction: column;
+	gap: var(--spacing-gap-small)
+}
+
+.Combobox__field {
+	width: 100%;
+	height: 48px;
+	
+	position: relative;
+}
+
+.Combobox__field > input{
+	width: 100%;
+	height: 48px;
+
+	font: var(--font-normal);
+	
+	border: 0;
+}
+
+
+.Combobox__field::after {
+	content: '\1F783';/* \1F891 */
+
+	position: absolute;
+	right: 20px;
+
+	font-size: 32px;
+}
