@@ -1,0 +1,22 @@
+.Accordion {
+	border: 2px solid red;
+}
+
+.Accordion__title {
+	height: 70px;
+
+	background-color: var(--color-primary);
+}
+
+.Accordion__title.Text {
+	line-height: 0;
+}
+
+.Accordion__trigger.Button {
+	height: 100%;
+}
+
+.Accordion__pannel{
+	padding: var(--spacing-gap-medium);
+	background-color: var(--color-tertiary);
+}
