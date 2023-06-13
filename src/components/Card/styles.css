@@ -1,0 +1,39 @@
+.Card {
+	display: flex;
+	flex-direction: row;
+	gap: var(--spacing-gap-big);
+}
+
+.Card--row {
+	flex-direction: column;
+}
+
+.Card__cover {
+	height: 381px;
+	width: 42%;
+
+	flex-shrink: 0;
+	border-radius: 16px;
+}
+
+.Card__cover--full {
+	width: 100%;
+}
+
+.Card__content {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-gap-big);
+}
+
+.Card__title {
+	text-align: center;
+}
+
+.Card__description {
+	text-align: center;
+}
+
+.Card__action {
+	text-align: center;
+}
