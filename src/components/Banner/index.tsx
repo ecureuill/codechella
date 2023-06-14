@@ -1,8 +1,4 @@
-import { PropsWithChildren, useId, useState } from 'react';
-import { MdMenu } from 'react-icons/md';
-import { Button, Mobile, NavBar } from '../.';
-import { ReactComponent as LogoSVG } from '../../assets/logos/white.svg';
-import data from '../../l10n/pt-br.json';
+import { PropsWithChildren } from 'react';
 import './styles.css';
 
 type BannerProps = {
@@ -11,37 +7,10 @@ type BannerProps = {
 
 const Banner = ({children, image}: PropsWithChildren<BannerProps>): JSX.Element => {
 
-	const [ opened, setOpened ] = useState(false);
-
-	const spanId = useId();
-
 	return (
-		<header className='Banner'>
-			<div className='Banner__menu'>
-				<Mobile>
-					<LogoSVG className='Banner__logo--mobile' />
-					<Button 
-						depth='2d'
-						size='tiny'
-						shape='icon'
-						aria-label='menu'
-						aria-describedby={spanId}
-						onClick={() => setOpened(!opened)}
-					>
-						<MdMenu />
-						<span id={spanId} className='visuallyhidden'>
-							{opened? data.controls.btn_menu.description.close : data.controls.btn_menu.description.open}
-						</span>
-					</Button>
-				</Mobile>
-			</div>
-			<Mobile>
-				{opened && <NavBar variant='mobile' />}
-			</Mobile>
-			<div className={`Banner__cover Banner__cover--${image}`}>
-				{children}
-			</div>
-		</header>
+		<div className={`Banner Banner--${image}`}>
+			{children}
+		</div>
 	);
 };
 

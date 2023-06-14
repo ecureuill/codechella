@@ -1,0 +1,27 @@
+.Header {
+	width: 100%;
+	max-width: 100%;
+
+	overflow: hidden;
+}
+
+.Header__menu {
+	width: 100%;
+	
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: var(--spacing-padding-medium) var(--spacing-padding-small);
+
+	background: var(--color-primary);
+}
+
+.Header__logo {
+	
+}
+
+.Header__logo--mobile {
+	min-width: 14rem;
+}
