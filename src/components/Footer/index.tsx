@@ -14,10 +14,10 @@ const Footer = (): JSX.Element => {
 			<div className='Footer__network'>
 				<Text>{data.contents.paragraphs['social-networks']}</Text>
 				<div className='Footer__networks'>
-					<img src={WhatsIco} alt=''/>
-					<img src={TwitchIco} alt=''/>
-					<img src={InstaIco} alt=''/>
-					<img src={TwitterIco} alt=''/>
+					<a href='#network'><img src={WhatsIco} alt=''/></a>
+					<a href='#network'><img src={TwitchIco} alt=''/></a>
+					<a href='#network'><img src={InstaIco} alt=''/></a>
+					<a href='#network'><img src={TwitterIco} alt=''/></a>
 				</div>
 			</div>
 			<Text>{data.contents.paragraphs['developed-by']}</Text>

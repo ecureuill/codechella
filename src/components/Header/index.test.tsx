@@ -19,7 +19,7 @@ describe('Header', () => {
 		
 		it('should render a button named menu', () => {
 			render(
-				<ResponsiveContext.Provider value={{ width: faker.number.int({max: 480}) }}>
+				<ResponsiveContext.Provider value={{ width: faker.number.int({max: MOBILE_MAX_WIDTH}) }}>
 					<Header />, 
 				</ResponsiveContext.Provider>
 			);
@@ -34,7 +34,6 @@ describe('Header', () => {
 				</ResponsiveContext.Provider>
 			);
 
-			expect(screen.getByRole('button')).toBeInTheDocument();
 			expect(screen.getByRole('button', { description: 'abrir o menu'})).toBeInTheDocument();
 		});
 		

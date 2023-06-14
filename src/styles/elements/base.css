@@ -21,4 +21,27 @@ body, #root{
 	flex-wrap: nowrap;
 }
 
+main {
+	overflow-y: auto;
+	overflow-x: hidden;
+	
+	flex-grow: 1;
+	
+	text-align: center;
+	
+	background: linear-gradient(180deg, var(--color-tertiary) 0%, var(--color-quaternary) 50%, var(--color-quinary) 100%);
+}
+
+header{
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+footer{
+	height: 312px;
+	min-height: 312px;
+	flex-grow: 0;
+}
+
+
 

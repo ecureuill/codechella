@@ -15,7 +15,6 @@ const Header = (): JSX.Element => {
 		<header className='Header'>
 			<div className='Header__menu'>
 				<Mobile>
-				</Mobile>
 					<LogoSVG className='Header__logo--mobile' />
 					<Button 
 						depth='2d'
@@ -30,6 +29,7 @@ const Header = (): JSX.Element => {
 							{opened? data.controls.btn_menu.description.close : data.controls.btn_menu.description.open}
 						</span>
 					</Button>
+				</Mobile>
 			</div>
 			<Mobile>
 				{opened && <NavBar variant='mobile' />}

@@ -9,3 +9,40 @@
   width: 1px;
 }
 
+.background-body {
+  background: linear-gradient(180deg, var(--color-tertiary) 0%, var(--color-quaternary) 50%, var(--color-quinary) 100%);
+}
+
+.main-wrapper {
+  padding: 32px 24px;
+}
+
+.margin-top-large {
+  margin-top: var(--spacing-margin-large);
+}
+
+.margin-bottom-big {
+  margin-bottom: var(--spacing-margin-big);
+}
+
+.margin-bottom-large {
+  margin-bottom: var(--spacing-margin-large);
+}
+
+.margin-bottom-medium {
+  margin-bottom: var(--spacing-margin-medium);
+}
+
+.margin-bottom-small {
+  margin-bottom: var(--spacing-margin-small);
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-image{
+  width: 100%;
+  height: 338px;
+}

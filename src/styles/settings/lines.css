@@ -3,5 +3,5 @@
 	--line-large: clamp(4.5rem, 1.037vw + 4.267rem, 5.2rem);
 	--line-medium: clamp(3.75rem, 1.185vw + 3.483rem, 4.55rem);
 	--line-small: clamp(3rem, 1.333vw + 2.7rem, 3.9rem);
-	--line-tiny: clamp(1.25rem, 1.481vw + 0.917rem, 2.25rem);
+	--line-tiny: clamp(2.5rem, 1.481vw + 0.917rem, 3.25rem);
 } 

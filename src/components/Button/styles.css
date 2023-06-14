@@ -14,11 +14,13 @@
 	display: inline-flex;
 	align-items: center;
 	gap: 16px;
-
-	font: var(--font-normal-bold);
-	color: var(--color-zero);
 }
 
+.Button__content, .Button__content > * {
+	font: var(--font-normal);
+	font-weight: 700;
+	color: var(--color-zero);
+}
 
 .Button__content--center {
 	justify-content: center;
