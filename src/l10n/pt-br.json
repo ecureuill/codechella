@@ -18,22 +18,57 @@
 			"action": {
 				"buy-ticket": "comprar ingresso!"
 			}
+		},
+		"btn_go": {
+			"action": {
+				"go": "avançar!"
+			}
 		}
 	}, 
 	"contents": {
 		"headings": {
-			"welcome-to": "Boas-vindas ao",
+			"accessibility": "Acessibilidade e Inclusão",
+			"attractions": "Atrações",
+			"buy-ticket": "Garanta seu Ingresso",
 			"evento_data": "< 11 e 12 de Março >",
 			"evento_local": "Aluródromo de São Paulo",
+			"experience": "A Experiência",
+			"faq": "Perguntas Frequentes:",
+			"form": "Preencha o formulário a seguir:",
+			"information": "Informações Gerais",
 			"line-up": "Line-Up",
+			"map-details": "Mais detalhes sobre os setores:",
 			"saturday": "SÁBADO <11/03>",
-			"sunday": "DOMINGO <12/03>"
-
+			"sunday": "DOMINGO <12/03>",
+			"sustentability": "Sustentabilidade",
+			"ticket": "Seu ingresso está aqui!",
+			"ticket-fun": "Uhul, agora sim! Seu ingresso está aqui, apresente na entrada do evento e divirta-se!",
+			"welcome-to": "Boas-vindas ao"
 		},
 		"paragraphs": {
+			"accessibility": "Nosso evento tenta abraçar um público mais amplo em todos os sentidos, de todas as idades, corpos, gostos e pensamentos!  Isso está presente no  espaço físico, na sinalização, no treinamento da equipe de apoio, na comunicação em libras, braile, visual e tátil. Além disso, dispomos de ingressos gratuitos para pessoas com deficiência e acompanhantes, pessoas idosas e crianças!",
+			"attractions": "Intervenções artísticas e culturais para todos os gostos! Durante os intervalos dos shows, nossa experiência contará com recreação para crianças, oficina de cerâmica, origami, circo e aquarela! Além disso, nosso espaço contra com 3 praças de alimentação, roda gigante e outros brinquedos!",
+			"developed-by": "Desenvolvido por Alura. Projeto fictício sem fins comerciais.",
 			"evento": "Hora de programar nossa memória com novas lembranças! Uma nova experiência sobre música, linguagens e, claro, tecnologia! Somos um festival diverso, com vários artistas e referências. Divirta-se!",
 			"social-networks": "Acesse nossas redes",
-			"developed-by": "Desenvolvido por Alura. Projeto fictício sem fins comerciais."
+			"sustentability": "Queremos estar aqui celebrando daqui a 50, 100 anos! Por isso, levamos o futuro do nosso planeta a sério. Nosso festival é carbono zero, com utilização de copos retornáveis, coleta e destinação adequada de resíduos, e transporte coletivo."
+		},
+		"glossary": {
+			"birthday": "Data de Nascimento",
+			"date": "Data",
+			"email": "Email",
+			"floor": "Pista Comum",
+			"label": "legenda",
+			"name": "Nome Completo",
+			"ramp": "Rampas",
+			"ticket": "Tipo de ingresso",
+			"cortesy": "Ingresso Cortesia",
+			"seatA": "Cadeiras térreo",
+			"seatB": "Cadeiras térreo",
+			"seats": "Cadeiras",
+			"sector": "Setor",
+			"place": "Local",
+			"pit": "Pista Premium"
 		}
 	}
 }
