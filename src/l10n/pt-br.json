@@ -16,7 +16,7 @@
 		},
 		"btn_buy": {
 			"action": {
-				"buy-ticket": "comprar ingresso"
+				"buy-ticket": "comprar ingresso!"
 			}
 		}
 	}, 
@@ -31,7 +31,9 @@
 
 		},
 		"paragraphs": {
-			"evento": "Hora de programar nossa memória com novas lembranças! Uma nova experiência sobre música, linguagens e, claro, tecnologia! Somos um festival diverso, com vários artistas e referências. Divirta-se!"
+			"evento": "Hora de programar nossa memória com novas lembranças! Uma nova experiência sobre música, linguagens e, claro, tecnologia! Somos um festival diverso, com vários artistas e referências. Divirta-se!",
+			"social-networks": "Acesse nossas redes",
+			"developed-by": "Desenvolvido por Alura. Projeto fictício sem fins comerciais."
 		}
 	}
 }
