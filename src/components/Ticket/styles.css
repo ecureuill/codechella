@@ -1,0 +1,21 @@
+.Ticket {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-gap-medium);
+	align-items: center;
+	justify-content: center;
+
+	background: linear-gradient(180deg, var(--color-tertiary) 0%, var(--color-quaternary) 50%, var(--color-quinary) 100%);
+	box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+	padding: 32px;
+}
+
+.Ticket__header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.Ticket__logo {
+	height: 32px;
+}
