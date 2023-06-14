@@ -55,7 +55,7 @@
 	padding: 0;
 }
 
-.Button--icon > .Button__content {
+.Button--icon > svg, .Button__content > svg {
 	font-size: 32px;
 }
 

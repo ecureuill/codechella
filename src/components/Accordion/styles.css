@@ -1,9 +1,10 @@
 .Accordion {
-	border: 2px solid red;
 }
 
 .Accordion__title {
 	height: 70px;
+
+	margin-bottom: 8px;
 
 	background-color: var(--color-primary);
 }

@@ -2,7 +2,7 @@ import { PropsWithChildren } from 'react';
 import './styles.css';
 
 type BannerProps = {
-	image: 'home' | 'experience' | 'map' | 'info' | 'ticket'
+	image: 'home' | 'experience' | 'map' | 'info' | 'buy' | 'ticket'
 }
 
 const Banner = ({children, image}: PropsWithChildren<BannerProps>): JSX.Element => {

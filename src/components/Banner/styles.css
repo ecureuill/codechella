@@ -15,3 +15,23 @@
 .Banner--home {
 	background-image: url('../../assets/images/banner-summer-mobile-homepage.png')
 }
+
+.Banner--map {
+	background-image: url('../../assets/images/banner-summer-mobile-mappage.png')
+}
+
+.Banner--experience {
+	background-image: url('../../assets/images/banner-summer-mobile-xppage.png')
+}
+
+.Banner--info {
+	background-image: url('../../assets/images/banner-summer-mobile-infopage.png')
+}
+
+.Banner--buy {
+	background-image: url('../../assets/images/banner-summer-mobile-buypage.png')
+}
+
+.Banner--ticket {
+	background-image: url('../../assets/images/banner-summer-mobile-ticketpage.png')
+}

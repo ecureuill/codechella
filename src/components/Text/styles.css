@@ -79,7 +79,3 @@
 .Text--outlined::after {
 	right: calc(100% + var(--spacing-gap-big));
 }
-
-.Text~.Text {
-	margin-bottom: var(--spacing-margin-small);
-}
