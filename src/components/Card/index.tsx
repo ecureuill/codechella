@@ -10,15 +10,15 @@ type CardProps = {
 	variant?: 'column' | 'row'
 };
 
-const Card = ( {image: imagesrc, title, content, action, variant = 'column'}: PropsWithChildren<CardProps>): JSX.Element => {
+const Card = ( {image, title, content, action, variant = 'column'}: PropsWithChildren<CardProps>): JSX.Element => {
 	return (
 		<div className={`Card Card--${variant}`}>
-			<img src={imagesrc} alt='' className={`Card__cover ${variant === 'row'? 'Card__cover--full' : ''} `} />
+			<img src={image} alt='' className={'Card__cover'} />
 			<div className='Card__content'>
 				<Text className='Card__title' variant='title-2' size='tiny'>
 					{title}
 				</Text>
-				<Text className='Card__description'>
+				<Text className='Card__description' variant='paragraph'>
 					{content}
 				</Text>
 				<div className='Card__action'>

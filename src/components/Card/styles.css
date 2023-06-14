@@ -1,16 +1,26 @@
 .Card {
 	display: flex;
-	flex-direction: row;
 	gap: var(--spacing-gap-big);
 }
 
 .Card--row {
+	flex-direction: row;
+}
+
+.Card--column {
 	flex-direction: column;
+}
+
+.Card--row > .Card__cover {
+	width: 42%;
+}
+
+.Card--column > .Card__cover {
+	width: 100%;
 }
 
 .Card__cover {
 	height: 381px;
-	width: 42%;
 
 	flex-shrink: 0;
 	border-radius: 16px;
