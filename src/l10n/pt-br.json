@@ -3,7 +3,8 @@
 		"btn_menu": {
 			"action": {
 				"open": "abrir",
-				"close": "fechar"
+				"close": "fechar",
+				"by-ticket": "comprar ingresso"
 			},
 			"name": {
 				"menu": "menu"
@@ -12,15 +13,25 @@
 				"open": "abrir o menu",
 				"close": "fechar o menu"
 			}
+		},
+		"btn_buy": {
+			"action": {
+				"buy-ticket": "comprar ingresso"
+			}
 		}
 	}, 
 	"contents": {
 		"headings": {
-			"welcome-to": "Boas-vindas ao"
+			"welcome-to": "Boas-vindas ao",
+			"evento_data": "< 11 e 12 de Março >",
+			"evento_local": "Aluródromo de São Paulo",
+			"line-up": "Line-Up",
+			"saturday": "SÁBADO <11/03>",
+			"sunday": "DOMINGO <12/03>"
+
 		},
 		"paragraphs": {
-
+			"evento": "Hora de programar nossa memória com novas lembranças! Uma nova experiência sobre música, linguagens e, claro, tecnologia! Somos um festival diverso, com vários artistas e referências. Divirta-se!"
 		}
 	}
-
 }
