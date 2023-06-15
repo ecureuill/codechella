@@ -1,5 +1,6 @@
 import { useId, useState } from 'react';
 import { MdMenu } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 import { Button, Mobile, NavBar } from '../.';
 import { ReactComponent as LogoSVG } from '../../assets/logos/white.svg';
 import data from '../../l10n/pt-br.json';
@@ -15,7 +16,7 @@ const Header = (): JSX.Element => {
 		<header className='Header'>
 			<div className='Header__menu'>
 				<Mobile>
-					<LogoSVG className='Header__logo--mobile' />
+					<Link to={'/'}><LogoSVG className='Header__logo--mobile' /></Link>
 					<Button 
 						depth='2d'
 						size='tiny'
