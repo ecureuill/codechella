@@ -31,11 +31,11 @@ The css architecture was based on ITCSS.
 <img src='https://github.com/ecureuill/codechella/assets/993369/8c05cda9-f717-49c3-a583-318a366622a8' width='20%'/>
 <img src='https://github.com/ecureuill/codechella/assets/993369/cfe1ccde-b561-4882-9c35-291f4d7d43b9' width='40%'/>
 
-file:///home/sciuro/Downloads/firefox.tmp/xp.png![image](https://github.com/ecureuill/codechella/assets/993369/2a3d02f7-b844-4cb0-b5e2-2990d83fae97)
+![image](https://github.com/ecureuill/codechella/assets/993369/2a3d02f7-b844-4cb0-b5e2-2990d83fae97)
 
-file:///home/sciuro/Downloads/firefox.tmp/your-ticket.png![image](https://github.com/ecureuill/codechella/assets/993369/906a17c0-e09d-4a83-8031-87b895d12cee)
+![image](https://github.com/ecureuill/codechella/assets/993369/906a17c0-e09d-4a83-8031-87b895d12cee)
 
-file:///home/sciuro/Downloads/firefox.tmp/faq.png![image](https://github.com/ecureuill/codechella/assets/993369/c4868593-e51e-440d-a773-b34c4d85d6da)
+![image](https://github.com/ecureuill/codechella/assets/993369/c4868593-e51e-440d-a773-b34c4d85d6da)
 
-file:///home/sciuro/Downloads/firefox.tmp/map.png![image](https://github.com/ecureuill/codechella/assets/993369/58198723-fa04-47c9-afea-056e123bab38)
+![image](https://github.com/ecureuill/codechella/assets/993369/58198723-fa04-47c9-afea-056e123bab38)
 
