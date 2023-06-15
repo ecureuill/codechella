@@ -8,9 +8,10 @@ import Header from './Header';
 import Input from './Input';
 import Mobile from './MediaQuery/Mobile';
 import NavBar from './NavBar';
+import Tablet from './MediaQuery/Tablet';
 import Text from './Text';
 import Ticket from './Ticket';
 
 
-export { Accordion, Banner, Card, Combobox, Footer, Button, Header, Input, Mobile, NavBar, Text, Ticket };
+export { Accordion, Banner, Card, Combobox, Footer, Button, Header, Input, Mobile, NavBar, Tablet, Text, Ticket };
 
