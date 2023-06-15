@@ -8,10 +8,10 @@ import data from '../../l10n/pt-br.json';
 const HomePage = (): JSX.Element => {
 	const navigate = useNavigate();
 	const { isDarkMode } = useContext(themeContext);
-	const { isMobile, isAboveTablet } = useMediaQueries();
+	const { isSmallVW, isLargeVW } = useMediaQueries();
 
 	const theme = isDarkMode? 'boreal' : 'summer';
-	const screen = isAboveTablet? 'desktop' : isMobile? 'mobile' : 'tablet';
+	const screen = isLargeVW? 'desktop' : isSmallVW? 'mobile' : 'tablet';
 
 	return (
 		<>

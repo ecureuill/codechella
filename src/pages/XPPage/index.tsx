@@ -3,9 +3,9 @@ import data from '../../l10n/pt-br.json';
 import useMediaQueries from '../../hooks/useMediaQueries';
 
 const XPPage = (): JSX.Element => {
-	const { isMobile, isAboveTablet } = useMediaQueries();
+	const { isSmallVW, isLargeVW } = useMediaQueries();
 
-	const screen = isAboveTablet? 'desktop' : isMobile? 'mobile' : 'tablet';
+	const screen = isLargeVW? 'desktop' : isSmallVW? 'mobile' : 'tablet';
 	return (
 		<>
 			<Banner image='experience'>

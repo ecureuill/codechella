@@ -1,35 +1,16 @@
 import { useMediaQuery as umq } from 'react-responsive';
-import MediaQuery from '../utils/enums/MediaQuery';
 
 const useMediaQuery = (query: string): boolean => umq({ query });
 
 const useMediaQueries = () => {
-	const isSmallMobile = useMediaQuery(MediaQuery.smallMobileMediaQuery);
-	const isMobile = useMediaQuery(MediaQuery.mobileMediaQuery);
-	const isTablet = useMediaQuery(MediaQuery.tabletMediaQuery);
-	const isLaptop = useMediaQuery(MediaQuery.laptopMediaQuery);
-	const isDesktop = useMediaQuery(MediaQuery.desktoMediaQuery);
-	const isBigScreen = useMediaQuery(MediaQuery.bigScreenMediaQuery);
-	
-	const isMobileOrTablet = useMediaQuery(MediaQuery.mobileOrTabletMediaQuery);
-	const isAboveTablet = useMediaQuery(MediaQuery.aboveTabletMediaQuery);
-	
-	const isPortrait = useMediaQuery(MediaQuery.orientationPortrait);
-	const isLandscape = useMediaQuery(MediaQuery.orientationLandscape);
+	const isSmallVW = useMediaQuery('(max-device-width: 549px)');
+	const isMediumVW = useMediaQuery('(min-device-width: 550px) and (max-device-width: 1043px)');
+	const isLargeVW = useMediaQuery('(min-device-width: 1044px)');
 
 	return {
-		isSmallMobile,
-		isMobile,
-		isTablet,
-		isLaptop,
-		isDesktop,
-		isBigScreen,
-
-		isMobileOrTablet,
-		isAboveTablet,
-		
-		isPortrait,
-		isLandscape
+		isSmallVW,
+		isMediumVW,
+		isLargeVW
 	};
 };
 

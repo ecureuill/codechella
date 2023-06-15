@@ -7,8 +7,8 @@ type BannerProps = {
 }
 
 const Banner = ({children, image}: PropsWithChildren<BannerProps>): JSX.Element => {
-	const { isTablet, isAboveTablet } = useMediaQueries();
-	const screen = isAboveTablet? 'desktop' : isTablet? 'tablet' : 'mobile';
+	const { isMediumVW, isLargeVW } = useMediaQueries();
+	const screen = isLargeVW? 'desktop' : isMediumVW? 'tablet' : 'mobile';
 
 	return (
 		<div className={`Banner Banner--${image} Banner--${screen}`}>

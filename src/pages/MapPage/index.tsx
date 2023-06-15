@@ -2,18 +2,19 @@ import { Banner, Card, Text } from '../../components';
 import data from '../../l10n/pt-br.json';
 import { faker } from '@faker-js/faker';
 import useMediaQueries from '../../hooks/useMediaQueries';
+import './styles.css';
 
 const MapPage = (): JSX.Element => {
-	const { isMobile, isAboveTablet } = useMediaQueries();
+	const { isSmallVW, isLargeVW } = useMediaQueries();
 
-	const screen = isAboveTablet? 'desktop' : isMobile? 'mobile' : 'tablet';
+	const screen = isLargeVW? 'desktop' : isSmallVW? 'mobile' : 'tablet';
 
 	return (
 		<>
 			<Banner image='map'>
 				<Text variant='title-1'>{data.contents.headings.map}</Text>
 			</Banner>
-			<div className='flex-column flex-column--center'>
+			<div className={'flex-column center'}>
 				<img src={`/images/${screen}/image-6.png`} alt="map" />
 				<ul className='legend--list'>
 					<li className='legend legend--blue'><Text>{data.contents.glossary.pit}</Text></li>

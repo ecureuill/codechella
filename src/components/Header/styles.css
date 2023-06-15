@@ -21,7 +21,7 @@
 	align-items: center;
 }
 
-.Header__menu--tablet {
+.Header__menu--mediumVW {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;

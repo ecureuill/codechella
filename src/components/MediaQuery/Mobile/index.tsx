@@ -2,11 +2,11 @@ import { PropsWithChildren } from 'react';
 import useMediaQueries from '../../../hooks/useMediaQueries';
 
 const Mobile = ({ children } : PropsWithChildren) : JSX.Element =>  {
-	const { isMobile } = useMediaQueries();
+	const { isSmallVW } = useMediaQueries();
 	
 	return (
 		<>
-			{isMobile && children}
+			{isSmallVW && children}
 		</>
 	);
 };

@@ -1,9 +1,10 @@
 import { useId, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Button, Icons, Mobile, NavBar, Tablet } from '../.';
+import { Button, Icons, Mobile, NavBar } from '../.';
 import { ReactComponent as LogoSVG } from '../../assets/logos/white.svg';
 import useMediaQueries from '../../hooks/useMediaQueries';
 import data from '../../l10n/pt-br.json';
+import TabletOrAbove from '../MediaQuery/TabletOrAbove';
 import ThemeSwitcher from '../ThemeSwitcher';
 import './styles.css';
 
@@ -11,15 +12,15 @@ const Header = (): JSX.Element => {
 
 	const [ opened, setOpened ] = useState(false);
 
-	const { isTablet } = useMediaQueries();
+	const { isMediumVW } = useMediaQueries();
 	const spanId = useId();
 
 	return (
 		<header className='Header'>
-			<Tablet>
+			<TabletOrAbove>
 				<ThemeSwitcher />
-			</Tablet>
-			<div className={`Header__menu ${isTablet? 'Header__menu--tablet': ''}`}>
+			</TabletOrAbove>
+			<div className={`Header__menu ${isMediumVW? 'Header__menu--mediumVW': ''}`}>
 				<Link to={'/'}><LogoSVG className='Header__logo--mobile' /></Link>
 				<Mobile>
 					<Button 
@@ -36,9 +37,9 @@ const Header = (): JSX.Element => {
 						</span>
 					</Button>
 				</Mobile>
-				<Tablet>
+				<TabletOrAbove>
 					<NavBar />
-				</Tablet>
+				</TabletOrAbove>
 			</div>
 			<Mobile>
 				{opened && <NavBar variant='mobile' />}

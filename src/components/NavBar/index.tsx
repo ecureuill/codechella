@@ -10,7 +10,7 @@ type NavBarProps = {
 }
 
 const NavBar = ({variant}: NavBarProps) => {
-	const { isTablet } = useMediaQueries();
+	const { isMediumVW } = useMediaQueries();
 
 	return (
 
@@ -19,13 +19,13 @@ const NavBar = ({variant}: NavBarProps) => {
 				<ThemeSwitcher />
 			</Mobile>
 			<Link to='/attractions' className='NavBar__item'>
-				<Text bold={true}>{isTablet? 'Experiência' : 'A experiência'}</Text>
+				<Text bold={true}>{isMediumVW? 'Experiência' : 'A experiência'}</Text>
 			</Link>
 			<Mobile>
 				<hr className='NavBar__separator'/>
 			</Mobile>
 			<Link to={'/map'} className='NavBar__item'>
-				<Text bold={true}>{isTablet? 'Setores' : 'Mapa de Setores'}</Text>
+				<Text bold={true}>{isMediumVW? 'Setores' : 'Mapa de Setores'}</Text>
 			</Link>
 			<Mobile>
 				<hr className='NavBar__separator'/>
