@@ -12,50 +12,50 @@
 	background-size: 100%;
 }
 
-.summerTheme .Banner--home {
-	background-image: url('../../assets/images/banner-summer-mobile-homepage.png')
+.summerTheme .Banner--home.Banner--mobile {
+	background-image: url('../../assets/images/mobile/summer/banner-homepage.png')
 }
 
-.summerTheme .Banner--map {
-	background-image: url('../../assets/images/banner-summer-mobile-mappage.png')
+.summerTheme .Banner--map.Banner--mobile {
+	background-image: url('../../assets/images/mobile/summer/banner-mappage.png')
 }
 
-.summerTheme .Banner--experience {
-	background-image: url('../../assets/images/banner-summer-mobile-xppage.png')
+.summerTheme .Banner--experience.Banner--mobile {
+	background-image: url('../../assets/images/mobile/summer/banner-xppage.png')
 }
 
-.summerTheme .Banner--info {
-	background-image: url('../../assets/images/banner-summer-mobile-infopage.png')
+.summerTheme .Banner--info.Banner--mobile {
+	background-image: url('../../assets/images/mobile/summer/banner-infopage.png')
 }
 
-.summerTheme .Banner--buy {
-	background-image: url('../../assets/images/banner-summer-mobile-buypage.png')
+.summerTheme .Banner--buy.Banner--mobile {
+	background-image: url('../../assets/images/mobile/summer/banner-buypage.png')
 }
 
-.summerTheme .Banner--ticket {
-	background-image: url('../../assets/images/banner-summer-mobile-ticketpage.png')
+.summerTheme .Banner--ticket.Banner--mobile {
+	background-image: url('../../assets/images/mobile/summer/banner-ticketpage.png')
 }
 
-.borealTheme .Banner--home {
-	background-image: url('../../assets/images/banner-boreal-mobile-homepage.png')
+.borealTheme .Banner--home.Banner--mobile {
+	background-image: url('../../assets/images/mobile/boreal/banner-homepage.png')
 }
 
-.borealTheme .Banner--map {
-	background-image: url('../../assets/images/banner-boreal-mobile-mappage.png')
+.borealTheme .Banner--map.Banner--mobile {
+	background-image: url('../../assets/images/mobile/boreal/banner-mappage.png')
 }
 
-.borealTheme .Banner--experience {
-	background-image: url('../../assets/images/banner-boreal-mobile-xppage.png')
+.borealTheme .Banner--experience.Banner--mobile {
+	background-image: url('../../assets/images/mobile/boreal/banner-xppage.png')
 }
 
-.borealTheme .Banner--info {
-	background-image: url('../../assets/images/banner-boreal-mobile-infopage.png')
+.borealTheme .Banner--info.Banner--mobile {
+	background-image: url('../../assets/images/mobile/boreal/banner-infopage.png')
 }
 
-.borealTheme .Banner--buy {
-	background-image: url('../../assets/images/banner-boreal-mobile-buypage.png')
+.borealTheme .Banner--buy.Banner--mobile {
+	background-image: url('../../assets/images/mobile/boreal/banner-buypage.png')
 }
 
-.borealTheme .Banner--ticket {
-	background-image: url('../../assets/images/banner-boreal-mobile-ticketpage.png')
+.borealTheme .Banner--ticket.Banner--mobile {
+	background-image: url('../../assets/images/mobile/boreal/banner-ticketpage.png')
 }

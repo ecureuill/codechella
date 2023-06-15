@@ -12,6 +12,7 @@ const useMediaQueries = () => {
 	const isBigScreen = useMediaQuery(MediaQuery.bigScreenMediaQuery);
 	
 	const isMobileOrTablet = useMediaQuery(MediaQuery.mobileOrTabletMediaQuery);
+	const isAboveTablet = useMediaQuery(MediaQuery.aboveTabletMediaQuery);
 	
 	const isPortrait = useMediaQuery(MediaQuery.orientationPortrait);
 	const isLandscape = useMediaQuery(MediaQuery.orientationLandscape);
@@ -25,6 +26,7 @@ const useMediaQueries = () => {
 		isBigScreen,
 
 		isMobileOrTablet,
+		isAboveTablet,
 		
 		isPortrait,
 		isLandscape

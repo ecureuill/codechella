@@ -1,10 +1,11 @@
 import { Banner, Card, Text } from '../../components';
 import data from '../../l10n/pt-br.json';
-import IMG1 from '../../assets/images/card-summer-mobile-5.png' ;
-import IMG2 from '../../assets/images/card-summer-mobile-4.png' ;
-import IMG3 from '../../assets/images/card-summer-mobile-3.png' ;
+import useMediaQueries from '../../hooks/useMediaQueries';
 
 const XPPage = (): JSX.Element => {
+	const { isTablet, isDesktop } = useMediaQueries();
+
+	const screen = isDesktop? 'desktop' : isTablet? 'tablet' : 'mobile';
 	return (
 		<>
 			<Banner image='experience'>
@@ -12,19 +13,19 @@ const XPPage = (): JSX.Element => {
 			</Banner>
 			<div className='main-wrapper'>
 				<Card 
-					image={IMG1}
+					image={`/images/${screen}/image-5.png`}
 					title={data.contents.headings.accessibility} 
 					content={data.contents.paragraphs.accessibility} 
 					variant='column'
 				/>
 				<Card 
-					image={IMG3}
+					image={`/images/${screen}/image-3.png`}
 					title={data.contents.headings.sustentability} 
 					content={data.contents.paragraphs.sustentability} 
 					variant='column'
 				/>
 				<Card 
-					image={IMG2}
+					image={`/images/${screen}/image-4.png`}
 					title={data.contents.headings.attractions} 
 					content={data.contents.paragraphs.attractions} 
 					variant='column'

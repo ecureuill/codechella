@@ -1,17 +1,18 @@
 import { Banner, Button, Card, Text } from '../../components';
 import data from '../../l10n/pt-br.json';
-import IMG1 from '../../assets/images/card-summer-mobile-1.png' ;
-import IMG2 from '../../assets/images/card-summer-mobile-2.png' ;
-import IMG3 from '../../assets/images/card-boreal-mobile-1.png' ;
-import IMG4 from '../../assets/images/card-boreal-mobile-2.png' ;
 import { MdLocalActivity } from 'react-icons/md';
 import { useContext } from 'react';
 import { themeContext } from '../../contexts/theme.context';
 import { useNavigate } from 'react-router-dom';
+import useMediaQueries from '../../hooks/useMediaQueries';
 
 const HomePage = (): JSX.Element => {
 	const navigate = useNavigate();
 	const { isDarkMode } = useContext(themeContext);
+	const { isTablet, isDesktop } = useMediaQueries();
+
+	const theme = isDarkMode? 'boreal' : 'summer';
+	const screen = isDesktop? 'desktop' : isTablet? 'tablet' : 'mobile';
 
 	return (
 		<>
@@ -20,7 +21,7 @@ const HomePage = (): JSX.Element => {
 			</Banner>
 			<div className='main-wrapper'>
 				<Card 
-					image={isDarkMode? IMG3: IMG1}
+					image={`/images/${screen}/${theme}/image-1.png`}
 					title={`${data.contents.headings.evento_data} ${data.contents.headings.evento_local}`} 
 					content={data.contents.paragraphs.evento} 
 					action={
@@ -71,7 +72,7 @@ const HomePage = (): JSX.Element => {
 					<span>Rubycat Dolls</span>
 				</Text>
 			</div>
-			<img src={isDarkMode? IMG4: IMG2}  alt="" className='bottom-image'/>
+			<img src={`/images/${screen}/${theme}/image-2.png`}  alt="" className='bottom-image'/>
 		</>
 	);
 };

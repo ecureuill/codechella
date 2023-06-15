@@ -1,19 +1,20 @@
 import { Banner, Card, Text } from '../../components';
 import data from '../../l10n/pt-br.json';
-import IMG1 from '../../assets/images/card-summer-mobile-6.png' ;
-import IMG2 from '../../assets/images/card-summer-mobile-7.png' ;
-import IMG3 from '../../assets/images/card-summer-mobile-8.png' ;
-import IMG4 from '../../assets/images/card-summer-mobile-9.png' ;
 import { faker } from '@faker-js/faker';
+import useMediaQueries from '../../hooks/useMediaQueries';
 
 const MapPage = (): JSX.Element => {
+	const { isTablet, isDesktop } = useMediaQueries();
+
+	const screen = isDesktop? 'desktop' : isTablet? 'tablet' : 'mobile';
+
 	return (
 		<>
 			<Banner image='map'>
 				<Text variant='title-1'>{data.contents.headings.map}</Text>
 			</Banner>
 			<div className='flex-column flex-column--center'>
-				<img src={IMG1} alt="map" />
+				<img src={`/images/${screen}/image-6.png`} alt="map" />
 				<ul className='legend--list'>
 					<li className='legend legend--blue'><Text>{data.contents.glossary.pit}</Text></li>
 					<li className='legend legend--pink'><Text>{data.contents.glossary.floor}</Text></li>
@@ -25,19 +26,19 @@ const MapPage = (): JSX.Element => {
 			<div className='main-wrapper'>
 				<Text variant='paragraph' size='tiny'>{data.contents.headings['map-details']}</Text>
 				<Card 
-					image={IMG2}
+					image={`/images/${screen}/image-7.png`}
 					title={data.contents.glossary.pit} 
 					content={faker.lorem.sentence()} 
 					variant='column'
 				/>
 				<Card 
-					image={IMG3}
+					image={`/images/${screen}/image-8.png`}
 					title={data.contents.glossary.floor} 
 					content={faker.lorem.sentence()} 
 					variant='column'
 				/>
 				<Card 
-					image={IMG4}
+					image={`/images/${screen}/image-9.png`}
 					title={data.contents.glossary.seats} 
 					content={faker.lorem.sentence()} 
 					variant='column'

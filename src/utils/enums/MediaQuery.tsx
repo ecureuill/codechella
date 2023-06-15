@@ -6,6 +6,8 @@ enum MediaQuery {
 	desktoMediaQuery = '(min-device-width: 1025px) and (max-device-width: 1224px)',
 	bigScreenMediaQuery = '(min-device-width: 1225px)',
 	
+
+	aboveTabletMediaQuery = '(min-device-width: 769px)',
 	mobileOrTabletMediaQuery = '(max-device-width: 768px)',
 	
 	orientationPortrait = 'orientation: portrait',
