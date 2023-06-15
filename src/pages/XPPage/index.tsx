@@ -16,19 +16,20 @@ const XPPage = (): JSX.Element => {
 					image={`/images/${screen}/image-5.png`}
 					title={data.contents.headings.accessibility} 
 					content={data.contents.paragraphs.accessibility} 
-					variant='column'
+					variant={isLargeVW? 'row' : 'column'}
 				/>
 				<Card 
 					image={`/images/${screen}/image-3.png`}
 					title={data.contents.headings.sustentability} 
 					content={data.contents.paragraphs.sustentability} 
-					variant='column'
+					variant={isLargeVW? 'row' : 'column'}
+					direction={isLargeVW?'left': 'right'}
 				/>
 				<Card 
 					image={`/images/${screen}/image-4.png`}
 					title={data.contents.headings.attractions} 
 					content={data.contents.paragraphs.attractions} 
-					variant='column'
+					variant={isLargeVW? 'row' : 'column'}
 				/>
 			</div>
 		</>

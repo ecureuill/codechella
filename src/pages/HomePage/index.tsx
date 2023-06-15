@@ -27,7 +27,7 @@ const HomePage = (): JSX.Element => {
 						<Button size='fill' onClick={() => navigate('/ticket')}>{data.controls.btn_buy.action['buy-ticket']}<Icons>local_activity</Icons>
 						</Button>
 					}
-					variant='column'
+					variant={isLargeVW? 'row' : 'column'}
 				/>
 				<Text variant='title-2' size='large' className='margin-top-large margin-bottom-big'>/{data.contents.headings['line-up']}/</Text>
 				<Text variant='title-3' size='tiny' outlined='outlined' className='margin-bottom-large'>{data.contents.headings.saturday}</Text>

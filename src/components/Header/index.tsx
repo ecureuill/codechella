@@ -16,7 +16,7 @@ const Header = (): JSX.Element => {
 	const spanId = useId();
 
 	return (
-		<header className='Header'>
+		<header className={`Header ${isMediumVW? 'Header--tablet': ''}`}>
 			<TabletOrAbove>
 				<ThemeSwitcher />
 			</TabletOrAbove>

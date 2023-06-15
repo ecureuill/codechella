@@ -38,8 +38,6 @@ header{
 }
 
 footer{
-	height: 312px;
-	min-height: 312px;
 	flex-grow: 0;
 }
 

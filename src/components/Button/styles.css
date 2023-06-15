@@ -35,7 +35,7 @@
 }
 
 .Button--default {
-	width: 164px;
+	min-width: 164px;
 }
 
 .Button--tiny {

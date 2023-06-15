@@ -1,9 +1,5 @@
 .Ticket {
-	display: flex;
-	flex-direction: column;
 	gap: var(--spacing-gap-medium);
-	align-items: center;
-	justify-content: center;
 
 	background: linear-gradient(180deg, var(--color-tertiary) 0%, var(--color-quaternary) 50%, var(--color-quinary) 100%);
 	box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
@@ -18,4 +14,30 @@
 
 .Ticket__logo {
 	height: 32px;
+}
+.Ticket__content.flex-column {
+	align-items: center;
+}
+
+.Ticket__content.flex-row {
+	justify-content: start;
+	gap: 48px;
+
+	text-align: left;
+}
+
+.Ticket__name {
+	padding-bottom: 16px;
+}
+
+.Ticket__content.flex-row .Ticket__name{
+	padding-bottom: 24px;
+}
+
+.Ticket__qrCode {
+	width: 50%;
+}
+
+.Ticket__qrCode--desktop {
+	width: 189px;
 }

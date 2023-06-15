@@ -13,23 +13,31 @@ import { themeContext } from '../../contexts/theme.context';
 import data from '../../l10n/pt-br.json';
 import Text from '../Text';
 import './styles.css';
+import useMediaQueries from '../../hooks/useMediaQueries';
 
 const Footer = (): JSX.Element => {
 
+	const { isLargeVW, isSmallVW } = useMediaQueries();
 	const { isDarkMode } = useContext(themeContext);
+
 	return (
-		<footer className='Footer'>
-			<img src={isDarkMode? LogoWhite : LogoGrey} alt=''/>
-			<div className='Footer__network'>
-				<Text>{data.contents.paragraphs['social-networks']}</Text>
-				<div className='Footer__networks'>
-					<a href='#network'><img src={isDarkMode? WhatsIcoBoreal : WhatsIcoSummer} alt=''/></a>
-					<a href='#network'><img src={isDarkMode? TwitchIcoBoreal : TwitchIcoSummer} alt=''/></a>
-					<a href='#network'><img src={isDarkMode? InstaIcoBoreal : InstaIcoSummer} alt=''/></a>
-					<a href='#network'><img src={isDarkMode? TwitterIcoBoreal : TwitterIcoSummer} alt=''/></a>
+		<footer className={`Footer Footer--${isLargeVW? 'desktop' : isSmallVW? 'mobile' : 'tablet'}`}>
+			<aside>
+				<img src={isDarkMode? LogoWhite : LogoGrey} alt=''/>
+				<div className='Footer__network'>
+					<Text>{data.contents.paragraphs['social-networks']}</Text>
+					<div className='Footer__networks'>
+						<a href='#network'><img src={isDarkMode? WhatsIcoBoreal : WhatsIcoSummer} alt=''/></a>
+						<a href='#network'><img src={isDarkMode? TwitchIcoBoreal : TwitchIcoSummer} alt=''/></a>
+						<a href='#network'><img src={isDarkMode? InstaIcoBoreal : InstaIcoSummer} alt=''/></a>
+						<a href='#network'><img src={isDarkMode? TwitterIcoBoreal : TwitterIcoSummer} alt=''/></a>
+					</div>
 				</div>
-			</div>
-			<Text>{data.contents.paragraphs['developed-by']}</Text>
+			</aside>
+			<aside>
+				<Text>{data.contents.paragraphs['developed-by']}</Text>
+				<Text>{data.contents.paragraphs.project}</Text>
+			</aside>
 		</footer>
 	);
 };

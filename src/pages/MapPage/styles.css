@@ -1,0 +1,14 @@
+
+.tickets-wrapper{
+    gap: 24px
+}
+
+.tickets-wrapper .Card{
+    width: 382px;
+    height: 239px;
+}
+
+.tickets-wrapper>:nth-child(2){
+  margin-top: 155px;
+
+}

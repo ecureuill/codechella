@@ -42,7 +42,12 @@
   flex-direction: column;
 }
 
-.flex-column {
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.center {
   justify-content: center;
   align-items: center;
 }

@@ -11,8 +11,40 @@
 	padding: var(--spacing-padding-small);	
 }
 
+.Footer--mobile {
+	height: 312px;
+	max-height: 312px;
+}
+
+.Footer--tablet {
+	height: 252px;
+	max-height: 252px;
+}
+
+.Footer--desktop {
+	height: 232px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	text-align: left;
+}
+
+.Footer--desktop > * {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
 .Footer__network {
 	text-align: center;
+}
+
+.Footer--tablet .Footer__network, .Footer--desktop .Footer__network {
+	display: flex;
+	flex-direction: row;
+	gap: 16px;
 }
 
 .summerTheme .Footer {
