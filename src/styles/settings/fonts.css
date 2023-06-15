@@ -2,9 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
 
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 :root {
   --font-primary: 'Raleway',  sans-serif;
   --font-secondary: 'Calistoga', cursive;
+  --font-icon: 'Material Icons';
   
   --font-normal: 500 var(--size-tiny)/var(--line-tiny) var(--font-primary); 
 }

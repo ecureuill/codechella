@@ -1,6 +1,5 @@
 import { PropsWithChildren, ReactNode, useId, useState } from 'react';
-import { MdExpandLess, MdExpandMore } from 'react-icons/md';
-import { Button, Text } from '../.';
+import { Button, Icons, Text } from '../.';
 import './styles.css';
 
 type AccordionProps = {
@@ -47,7 +46,7 @@ const Section = ({title, children}: PropsWithChildren<SectionProps>): JSX.Elemen
 				>
 					<span>{title}</span>
 					<span>
-						{expanded? <MdExpandLess/> : <MdExpandMore />}
+						{expanded? <Icons>expand_less</Icons> : <Icons>expand_more</Icons>}
 					</span>
 				</Button>
 			</Text>
@@ -57,7 +56,7 @@ const Section = ({title, children}: PropsWithChildren<SectionProps>): JSX.Elemen
 				aria-labelledby={idTitle}
 				hidden={!expanded}
 			>
-				{children}
+				<Text>{children}</Text>
 			</div>
 		</>
 	);
