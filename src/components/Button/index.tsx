@@ -1,7 +1,7 @@
-import { HTMLAttributes, PropsWithChildren } from 'react';
+import { ComponentPropsWithoutRef, PropsWithChildren } from 'react';
 import './styles.css';
 
-interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
+interface ButtonProps extends ComponentPropsWithoutRef<'button'> {
 	depth?: '3d' | '2d'
 	shape?: 'pill' | 'rectangle' | 'icon'
 	size?: 'fill' | 'tiny' | 'default'

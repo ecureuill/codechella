@@ -3,12 +3,12 @@ import { Text } from '../.';
 import './styles.css';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
-	label: string
+	label: string,
+	errormessage?: string | undefined
 }
 
-const Input = ( {label, ...props}: InputProps): JSX.Element => {
+const Input = ( {label, errormessage, ...props}: InputProps): JSX.Element => {
 	const id = useId();
-
 	return (
 		<div className='Input'>
 			<label htmlFor={id} className='Input__label'>
@@ -16,6 +16,7 @@ const Input = ( {label, ...props}: InputProps): JSX.Element => {
 			</label>
 			<input id={id} className='Input__field' {...props}/>
 			<span className='Input__errortext' role='alert' aria-live='assertive'>
+				{errormessage}
 			</span>
 		</div>
 	);

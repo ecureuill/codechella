@@ -13,6 +13,11 @@ import useMediaQueries from '../../hooks/useMediaQueries';
 const Ticket = (): JSX.Element => {
 	const { isDarkMode } = useContext(themeContext);
 	const { isLargeVW } = useMediaQueries();
+	const ticket: {
+		name: string,
+		type: string
+	} = JSON.parse(localStorage.getItem('@codechella:ticket')!);
+	
 	return (
 		<div className='Ticket flex-column'>
 			<div className='Ticket__header'>
@@ -22,9 +27,9 @@ const Ticket = (): JSX.Element => {
 			<div className={`Ticket__content ${isLargeVW? 'flex-row' : 'flex-column'}`}>
 				<img src={QRCode} alt='qr code' className={`Ticket__qrCode ${isLargeVW? ' Ticket__qrCode--desktop': ''}`}/>
 				<div className='Ticket__data flex-column'>
-					<Text size='small' className='Ticket__name'>{faker.person.fullName()}</Text>
+					<Text size='small' className='Ticket__name'>{ticket.name}</Text>
 					<Text>{data.contents.glossary.cortesy}</Text>
-					<Text>{data.contents.glossary.sector} {data.contents.glossary.floor} </Text>
+					<Text>{data.contents.glossary.sector} {ticket.type} </Text>
 					<Text>{data.contents.glossary.date} {faker.number.int({ min: 1, max: 30	})}/{faker.date.month({abbreviated: true})}</Text>
 					<Text>{data.contents.glossary.place} {faker.address.city()} </Text>
 				</div>

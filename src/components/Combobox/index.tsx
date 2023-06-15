@@ -1,13 +1,14 @@
-import { useId } from 'react';
+import { ComponentPropsWithoutRef, useId } from 'react';
 import { Text } from '../.';
 import './styles.css';
 
-interface ComboboxProps {
+interface ComboboxProps extends ComponentPropsWithoutRef<'input'>{
 	label: string,
-	list: string[]
+	options: string[],
+	errormessage?: string | undefined
 }
 
-const Combobox = ( {label, list, ...props}: ComboboxProps): JSX.Element => {
+const Combobox = ( {label, errormessage, options, ...props}: ComboboxProps): JSX.Element => {
 	const id = useId();
 	const dlId = useId();
 
@@ -19,12 +20,13 @@ const Combobox = ( {label, list, ...props}: ComboboxProps): JSX.Element => {
 			<div className='Combobox__field'><input id={id} list={dlId} {...props}/></div>
 			<datalist id={dlId} className='Combobox__datalist'>
 				{
-					list.map(item => 
+					options.map(item => 
 						<option value={item}/>
 					)
 				}
 			</datalist>
 			<span className='Combobox__errortext' role='alert' aria-live='assertive'>
+				{errormessage}
 			</span>
 		</div>
 	);
