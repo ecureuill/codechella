@@ -8,11 +8,17 @@
 
 	text-align: center;
 	
-	padding: var(--spacing-padding-small);
-	
-	background-color: var(--color-quinary);
+	padding: var(--spacing-padding-small);	
 }
 
 .Footer__network {
 	text-align: center;
+}
+
+.summerTheme .Footer {
+	background-color: var(--color-quinary);
+}
+
+.borealTheme .Footer {
+	background-color: var(--color-primary);
 }

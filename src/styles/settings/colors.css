@@ -1,4 +1,6 @@
-:root {
+.summerTheme {
+	--color-base: #444444;
+
 	--color-negative: #444444;
 	--color-zero: #FFFFFF;
 	
@@ -7,4 +9,17 @@
 	--color-tertiary: #C8DEEF;
 	--color-quaternary: #FBF0DD;
 	--color-quinary: #FACF9D;
+}
+
+.borealTheme {
+	--color-base: #FFFFFF;
+	
+	--color-negative: #444444;
+	--color-zero: #FFFFFF;
+	
+	--color-primary: #4650BD;
+	--color-secondary: #008364;
+	--color-tertiary: #304968;
+	--color-quaternary: #36C1A0;
+	--color-quinary: #B6BCFF;
 }

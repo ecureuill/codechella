@@ -5,8 +5,8 @@ html{height: 100vh;
 }
 
 body {
-	color: var(--color-negative);
-	background-color: var(--color-zero);
+	color: var(--color-base);
+	background-color: var(--color-secondary);
 }
 
 body, #root{

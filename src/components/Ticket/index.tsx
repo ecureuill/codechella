@@ -1,16 +1,21 @@
 import { faker } from '@faker-js/faker/locale/pt_BR';
+import { useContext } from 'react';
 import { Text } from '../.';
-import QRCode from '../../assets/images/qrCode.svg';
-import CodeChellaLogo from '../../assets/icons/ticket2.svg';
 import CodeLogo from '../../assets/icons/ticket.svg';
+import CodeChellaGreyLogo from '../../assets/logos/grey.svg';
+import CodeChellaWhiteLogo from '../../assets/logos/white.svg';
+import QRCode from '../../assets/images/qrCode.svg';
+import { themeContext } from '../../contexts/theme.context';
 import data from '../../l10n/pt-br.json';
 import './styles.css';
 
 const Ticket = (): JSX.Element => {
+	const { isDarkMode } = useContext(themeContext);
+
 	return (
 		<div className='Ticket'>
 			<div className='Ticket__header'>
-				<img src={CodeChellaLogo} alt='' className='Ticket__logo'/>
+				<img src={isDarkMode? CodeChellaWhiteLogo : CodeChellaGreyLogo} alt='' className='Ticket__logo'/>
 				<img src={CodeLogo} alt='' className='Ticket__logo'/>
 			</div>
 			<img src={QRCode} alt='qr code'/>

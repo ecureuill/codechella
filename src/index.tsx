@@ -8,6 +8,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider } from 'react-router-dom';
 import { router } from './routers';
+import { ThemeProvider } from './contexts/theme.context';
 
 if (process.env['NODE_ENV'] !== 'production') {
 	// eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -22,6 +23,8 @@ const root = ReactDOM.createRoot(
 
 root.render(
 	<React.StrictMode>
-		<RouterProvider router={router} />
+		<ThemeProvider>
+			<RouterProvider router={router} />
+		</ThemeProvider>
 	</React.StrictMode>
 );

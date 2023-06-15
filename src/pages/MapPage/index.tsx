@@ -9,8 +9,8 @@ import { faker } from '@faker-js/faker';
 const MapPage = (): JSX.Element => {
 	return (
 		<>
-			<Banner image='experience'>
-				<Text variant='title-1'>{data.contents.headings.experience}</Text>
+			<Banner image='map'>
+				<Text variant='title-1'>{data.contents.headings.map}</Text>
 			</Banner>
 			<div className='flex-column flex-column--center'>
 				<img src={IMG1} alt="map" />
