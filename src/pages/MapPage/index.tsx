@@ -4,9 +4,9 @@ import { faker } from '@faker-js/faker';
 import useMediaQueries from '../../hooks/useMediaQueries';
 
 const MapPage = (): JSX.Element => {
-	const { isTablet, isDesktop } = useMediaQueries();
+	const { isMobile, isAboveTablet } = useMediaQueries();
 
-	const screen = isDesktop? 'desktop' : isTablet? 'tablet' : 'mobile';
+	const screen = isAboveTablet? 'desktop' : isMobile? 'mobile' : 'tablet';
 
 	return (
 		<>

@@ -1,7 +1,6 @@
 .Banner {
 	width: 100%;
-	height: 70vw; /*ratio 270/360*/
-	
+
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
@@ -11,6 +10,19 @@
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
+
+.Banner--mobile {
+	height: 70vw; /*ratio 270/360*/
+}
+
+.Banner--tablet {
+	height: 50vw; /*ratio 270/360*/
+}
+
+.Banner--desktop {
+	height: 28vw; /*ratio 270/360*/
+}
+
 
 .summerTheme .Banner--home.Banner--mobile {
 	background-image: url('../../assets/images/mobile/summer/banner-homepage.png')
@@ -58,4 +70,99 @@
 
 .borealTheme .Banner--ticket.Banner--mobile {
 	background-image: url('../../assets/images/mobile/boreal/banner-ticketpage.png')
+}
+
+.summerTheme .Banner--home.Banner--tablet {
+	background-image: url('../../assets/images/tablet/summer/banner-homepage.png')
+}
+
+.summerTheme .Banner--map.Banner--tablet {
+	background-image: url('../../assets/images/tablet/summer/banner-mappage.png')
+}
+
+.summerTheme .Banner--experience.Banner--tablet {
+	background-image: url('../../assets/images/tablet/summer/banner-xppage.png')
+}
+
+.summerTheme .Banner--info.Banner--tablet {
+	background-image: url('../../assets/images/tablet/summer/banner-infopage.png')
+}
+
+.summerTheme .Banner--buy.Banner--tablet {
+	background-image: url('../../assets/images/tablet/summer/banner-buypage.png')
+}
+
+.summerTheme .Banner--ticket.Banner--tablet {
+	background-image: url('../../assets/images/tablet/summer/banner-ticketpage.png')
+}
+
+.borealTheme .Banner--home.Banner--tablet {
+	background-image: url('../../assets/images/tablet/boreal/banner-homepage.png')
+}
+
+.borealTheme .Banner--map.Banner--tablet {
+	background-image: url('../../assets/images/tablet/boreal/banner-mappage.png')
+}
+
+.borealTheme .Banner--experience.Banner--tablet {
+	background-image: url('../../assets/images/tablet/boreal/banner-xppage.png')
+}
+
+.borealTheme .Banner--info.Banner--tablet {
+	background-image: url('../../assets/images/tablet/boreal/banner-infopage.png')
+}
+
+.borealTheme .Banner--buy.Banner--tablet {
+	background-image: url('../../assets/images/tablet/boreal/banner-buypage.png')
+}
+
+.borealTheme .Banner--ticket.Banner--tablet {
+	background-image: url('../../assets/images/tablet/boreal/banner-ticketpage.png')
+}
+.summerTheme .Banner--home.Banner--desktop {
+	background-image: url('../../assets/images/desktop/summer/banner-homepage.png')
+}
+
+.summerTheme .Banner--map.Banner--desktop {
+	background-image: url('../../assets/images/desktop/summer/banner-mappage.png')
+}
+
+.summerTheme .Banner--experience.Banner--desktop {
+	background-image: url('../../assets/images/desktop/summer/banner-xppage.png')
+}
+
+.summerTheme .Banner--info.Banner--desktop {
+	background-image: url('../../assets/images/desktop/summer/banner-infopage.png')
+}
+
+.summerTheme .Banner--buy.Banner--desktop {
+	background-image: url('../../assets/images/desktop/summer/banner-buypage.png')
+}
+
+.summerTheme .Banner--ticket.Banner--desktop {
+	background-image: url('../../assets/images/desktop/summer/banner-ticketpage.png')
+}
+
+.borealTheme .Banner--home.Banner--desktop {
+	background-image: url('../../assets/images/desktop/boreal/banner-homepage.png')
+}
+
+.borealTheme .Banner--map.Banner--desktop {
+	background-image: url('../../assets/images/desktop/boreal/banner-mappage.png')
+}
+
+.borealTheme .Banner--experience.Banner--desktop {
+	background-image: url('../../assets/images/desktop/boreal/banner-xppage.png')
+}
+
+.borealTheme .Banner--info.Banner--desktop {
+	background-image: url('../../assets/images/desktop/boreal/banner-infopage.png')
+}
+
+.borealTheme .Banner--buy.Banner--desktop {
+	background-image: url('../../assets/images/desktop/boreal/banner-buypage.png')
+}
+
+.borealTheme .Banner--ticket.Banner--desktop {
+	background-image: url('../../assets/images/desktop/boreal/banner-ticketpage.png')
 }

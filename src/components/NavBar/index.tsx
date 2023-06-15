@@ -3,12 +3,15 @@ import { Text } from '../.';
 import './styles.css';
 import { Link } from 'react-router-dom';
 import ThemeSwitcher from '../ThemeSwitcher';
+import useMediaQueries from '../../hooks/useMediaQueries';
 
 type NavBarProps = {
 	variant?: 'mobile' 
 }
 
 const NavBar = ({variant}: NavBarProps) => {
+	const { isTablet } = useMediaQueries();
+
 	return (
 
 		<nav className={`NavBar ${variant === undefined? '': `NavBar--${variant}` }`}>
@@ -16,13 +19,13 @@ const NavBar = ({variant}: NavBarProps) => {
 				<ThemeSwitcher />
 			</Mobile>
 			<Link to='/attractions' className='NavBar__item'>
-				<Text bold={true}>A experiência</Text>
+				<Text bold={true}>{isTablet? 'Experiência' : 'A experiência'}</Text>
 			</Link>
 			<Mobile>
 				<hr className='NavBar__separator'/>
 			</Mobile>
 			<Link to={'/map'} className='NavBar__item'>
-				<Text bold={true}>Mapa de Setores</Text>
+				<Text bold={true}>{isTablet? 'Setores' : 'Mapa de Setores'}</Text>
 			</Link>
 			<Mobile>
 				<hr className='NavBar__separator'/>

@@ -1,6 +1,5 @@
-import { MdArrowRight } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
-import { Banner, Button, Combobox, Input, Text } from '../../components';
+import { Banner, Button, Combobox, Input, Icons, Text } from '../../components';
 import data from '../../l10n/pt-br.json';
 
 const BuyPage = (): JSX.Element => {
@@ -28,7 +27,7 @@ const BuyPage = (): JSX.Element => {
 					/>
 					<Input type='date' label={data.contents.glossary.birthday} />
 					<Button onClick={() => navigate('/your-ticket')}>
-						{data.controls.btn_go.action.go}<MdArrowRight/>
+						{data.controls.btn_go.action.go}<Icons>arrow_right</Icons>
 					</Button>
 				</form>
 			</div>

@@ -1,18 +1,17 @@
-import { Banner, Button, Card, Text } from '../../components';
-import data from '../../l10n/pt-br.json';
-import { MdLocalActivity } from 'react-icons/md';
 import { useContext } from 'react';
-import { themeContext } from '../../contexts/theme.context';
 import { useNavigate } from 'react-router-dom';
+import { Banner, Button, Card, Icons, Text } from '../../components';
+import { themeContext } from '../../contexts/theme.context';
 import useMediaQueries from '../../hooks/useMediaQueries';
+import data from '../../l10n/pt-br.json';
 
 const HomePage = (): JSX.Element => {
 	const navigate = useNavigate();
 	const { isDarkMode } = useContext(themeContext);
-	const { isTablet, isDesktop } = useMediaQueries();
+	const { isMobile, isAboveTablet } = useMediaQueries();
 
 	const theme = isDarkMode? 'boreal' : 'summer';
-	const screen = isDesktop? 'desktop' : isTablet? 'tablet' : 'mobile';
+	const screen = isAboveTablet? 'desktop' : isMobile? 'mobile' : 'tablet';
 
 	return (
 		<>
@@ -25,7 +24,8 @@ const HomePage = (): JSX.Element => {
 					title={`${data.contents.headings.evento_data} ${data.contents.headings.evento_local}`} 
 					content={data.contents.paragraphs.evento} 
 					action={
-						<Button size='fill' onClick={() => navigate('/ticket')}>{data.controls.btn_buy.action['buy-ticket']}<MdLocalActivity/></Button>
+						<Button size='fill' onClick={() => navigate('/ticket')}>{data.controls.btn_buy.action['buy-ticket']}<Icons>local_activity</Icons>
+						</Button>
 					}
 					variant='column'
 				/>
