@@ -7,7 +7,7 @@ const ThemeSwitcher = (): JSX.Element => {
 	const { alternateTheme, isDarkMode } = useContext(themeContext);
 
 	return (
-		<Button shape='icon' size='tiny' depth='2d' onClick={() => alternateTheme()} >
+		<Button className='ThemeSwitcher' shape='icon' size='tiny' depth='2d' onClick={() => alternateTheme()} >
 			{
 				isDarkMode? 
 					<MdSunny />

@@ -7,5 +7,5 @@
 	--size-medium: clamp(2.5rem, 1.481vw + 2.167rem, 3.5rem); /*40*/
 	--size-small: clamp(2rem, 1.739vw + 1.609rem, 3rem); /*32px*/
 	/*paragraph*/
-	--size-tiny: clamp(1.25rem, 1.481vw + 0.917rem, 2.25rem);  /*20px*/
+	--size-tiny: clamp(1.25rem, 0.943vw + 1.026rem, 1.875rem);  /*20px*/
 } 

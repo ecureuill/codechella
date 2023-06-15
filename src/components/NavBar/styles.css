@@ -20,7 +20,6 @@
 }
 
 .NavBar__item {
-	font: var(--font-normal-bold);
 	color: var(--color-zero);
 	text-decoration: none;
 }
