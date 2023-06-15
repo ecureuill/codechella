@@ -13,6 +13,9 @@ const NavBar = ({variant}: NavBarProps) => {
 
 		<nav className={`NavBar ${variant === undefined? '': `NavBar--${variant}` }`}>
 			<ThemeSwitcher />
+			<Mobile>
+				<hr className='NavBar__separator'/>
+			</Mobile>
 			<Link to='/attractions' className='NavBar__item'>
 				<Text bold={true}>A experiência</Text>
 			</Link>
