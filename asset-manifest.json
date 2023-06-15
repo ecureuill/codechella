@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/codechella/static/css/main.b4853cc0.css",
+    "main.js": "/codechella/static/js/main.a1bc449a.js",
+    "static/media/banner-homepage.png": "/codechella/static/media/banner-homepage.d8a75c5f660e177ddc8a.png",
+    "static/media/banner-mappage.png": "/codechella/static/media/banner-mappage.9379c72f8d49e83d56dd.png",
+    "static/media/banner-ticketpage.png": "/codechella/static/media/banner-ticketpage.55cd5dc4c25c551318df.png",
+    "static/media/banner-buypage.png": "/codechella/static/media/banner-buypage.6209371da151e90adfeb.png",
+    "static/media/banner-infopage.png": "/codechella/static/media/banner-infopage.3428104fc1d1d51e1822.png",
+    "static/media/banner-xppage.png": "/codechella/static/media/banner-xppage.49e048527ca0d6023281.png",
+    "static/media/grey.svg": "/codechella/static/media/grey.34727dbed332efa452d2466e194c0409.svg",
+    "static/media/qrCode.svg": "/codechella/static/media/qrCode.5ee7e390ba5f05b61413831b9ef99bcc.svg",
+    "static/media/white.svg": "/codechella/static/media/white.d37141fddfda4844430de2fcea87e5e3.svg",
+    "static/media/ticket.svg": "/codechella/static/media/ticket.48e93d2706c209913e3e67c161d04070.svg",
+    "static/media/whatsapp.svg": "/codechella/static/media/whatsapp.e5f26658817bfafe59582145c04dd7fe.svg",
+    "static/media/instagram.svg": "/codechella/static/media/instagram.fcbaf0608a4e809c61c7b25f75efab9b.svg",
+    "static/media/twitter.svg": "/codechella/static/media/twitter.efde91d70880c068dd687e7a72e10b6a.svg",
+    "static/media/twitch.svg": "/codechella/static/media/twitch.be640a7c6f4d9c3e025212174b03f17e.svg",
+    "index.html": "/codechella/index.html",
+    "main.b4853cc0.css.map": "/codechella/static/css/main.b4853cc0.css.map",
+    "main.a1bc449a.js.map": "/codechella/static/js/main.a1bc449a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4853cc0.css",
+    "static/js/main.a1bc449a.js"
+  ]
+}
