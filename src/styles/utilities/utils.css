@@ -102,3 +102,7 @@
 .form.flex-column {
   gap: 32px
 }
+
+.borealTheme input {
+  color: var(--color-negative)
+}
