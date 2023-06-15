@@ -8,12 +8,15 @@ type CardProps = {
 	content: string
 	action?: ReactNode
 	variant?: 'column' | 'row'
+	direction?: 'left' | 'right'
 };
 
-const Card = ( {image, title, content, action, variant = 'column'}: PropsWithChildren<CardProps>): JSX.Element => {
+const Card = ( {direction='right', image, title, content, action, variant = 'column'}: PropsWithChildren<CardProps>): JSX.Element => {
 	return (
 		<div className={`Card Card--${variant}`}>
-			<img src={image} alt='' className={'Card__cover'} />
+			{direction === 'right' &&
+				<img src={image} alt='' className={'Card__cover'} />
+			}
 			<div className='Card__content'>
 				<Text className='Card__title' variant='title-2' size='tiny'>
 					{title}
@@ -25,7 +28,9 @@ const Card = ( {image, title, content, action, variant = 'column'}: PropsWithChi
 					{action}
 				</div>
 			</div>
-
+			{direction === 'left' &&
+				<img src={image} alt='' className={'Card__cover'} />
+			}
 		</div>
 	);
 };
