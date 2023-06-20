@@ -1,13 +1,22 @@
 {
   "files": {
     "main.css": "/codechella/static/css/main.b4853cc0.css",
-    "main.js": "/codechella/static/js/main.7820b06a.js",
+    "main.js": "/codechella/static/js/main.06335f96.js",
     "static/media/banner-homepage.png": "/codechella/static/media/banner-homepage.d8a75c5f660e177ddc8a.png",
     "static/media/banner-mappage.png": "/codechella/static/media/banner-mappage.9379c72f8d49e83d56dd.png",
+    "static/media/image-2.png": "/codechella/static/media/image-2.45c373ee88f0056f59f6.png",
     "static/media/banner-ticketpage.png": "/codechella/static/media/banner-ticketpage.55cd5dc4c25c551318df.png",
     "static/media/banner-buypage.png": "/codechella/static/media/banner-buypage.6209371da151e90adfeb.png",
     "static/media/banner-infopage.png": "/codechella/static/media/banner-infopage.3428104fc1d1d51e1822.png",
+    "static/media/image-1.png": "/codechella/static/media/image-1.0a10df2f0b75cc070fe3.png",
     "static/media/banner-xppage.png": "/codechella/static/media/banner-xppage.49e048527ca0d6023281.png",
+    "static/media/image-4.png": "/codechella/static/media/image-4.91e3eca652b317245faf.png",
+    "static/media/image-5.png": "/codechella/static/media/image-5.0dd43f83b21ad8b98e1b.png",
+    "static/media/image-3.png": "/codechella/static/media/image-3.859069e5a0f7aec30210.png",
+    "static/media/image-7.png": "/codechella/static/media/image-7.100279b9318d0766c604.png",
+    "static/media/image-8.png": "/codechella/static/media/image-8.5c13f1736a0efd60adee.png",
+    "static/media/image-9.png": "/codechella/static/media/image-9.b969cf38d74847e39ee6.png",
+    "static/media/image-6.png": "/codechella/static/media/image-6.a1cf4a50ae37e7d00726.png",
     "static/media/grey.svg": "/codechella/static/media/grey.34727dbed332efa452d2466e194c0409.svg",
     "static/media/qrCode.svg": "/codechella/static/media/qrCode.5ee7e390ba5f05b61413831b9ef99bcc.svg",
     "static/media/white.svg": "/codechella/static/media/white.d37141fddfda4844430de2fcea87e5e3.svg",
@@ -18,10 +27,10 @@
     "static/media/twitch.svg": "/codechella/static/media/twitch.be640a7c6f4d9c3e025212174b03f17e.svg",
     "index.html": "/codechella/index.html",
     "main.b4853cc0.css.map": "/codechella/static/css/main.b4853cc0.css.map",
-    "main.7820b06a.js.map": "/codechella/static/js/main.7820b06a.js.map"
+    "main.06335f96.js.map": "/codechella/static/js/main.06335f96.js.map"
   },
   "entrypoints": [
     "static/css/main.b4853cc0.css",
-    "static/js/main.7820b06a.js"
+    "static/js/main.06335f96.js"
   ]
 }
