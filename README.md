@@ -21,8 +21,6 @@
 
 ## Project Details
 
-For this project, I stored some of the assets in the public folder, in order to dynamically load image path accordingly to choosen theme and screen width.
-The css architecture was based on ITCSS.
 
 ### Screenshots
 
