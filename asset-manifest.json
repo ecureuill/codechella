@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/codechella/static/css/main.b4853cc0.css",
-    "main.js": "/codechella/static/js/main.a1bc449a.js",
+    "main.js": "/codechella/static/js/main.7820b06a.js",
     "static/media/banner-homepage.png": "/codechella/static/media/banner-homepage.d8a75c5f660e177ddc8a.png",
     "static/media/banner-mappage.png": "/codechella/static/media/banner-mappage.9379c72f8d49e83d56dd.png",
     "static/media/banner-ticketpage.png": "/codechella/static/media/banner-ticketpage.55cd5dc4c25c551318df.png",
@@ -18,10 +18,10 @@
     "static/media/twitch.svg": "/codechella/static/media/twitch.be640a7c6f4d9c3e025212174b03f17e.svg",
     "index.html": "/codechella/index.html",
     "main.b4853cc0.css.map": "/codechella/static/css/main.b4853cc0.css.map",
-    "main.a1bc449a.js.map": "/codechella/static/js/main.a1bc449a.js.map"
+    "main.7820b06a.js.map": "/codechella/static/js/main.7820b06a.js.map"
   },
   "entrypoints": [
     "static/css/main.b4853cc0.css",
-    "static/js/main.a1bc449a.js"
+    "static/js/main.7820b06a.js"
   ]
 }
