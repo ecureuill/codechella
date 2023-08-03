@@ -75,9 +75,9 @@ One of the exciting features of the Codechella website is the implementation of 
 ## Running Locally
 To run the Codechella project locally, follow these steps:
 
-1. Clone this repository: git clone https://github.com/ecureuill/codechella.git
-1. Install the dependencies: npm install
-1. Start the development server: npm start
+1. Clone this repository: `git clone https://github.com/ecureuill/codechella.git` 
+1. Install the dependencies: `npm install`
+1. Start the development server: `npm start`
 1. Access the project in your web browser at: http://localhost:3000
 
 ## Feedback and Contributions
@@ -106,4 +106,4 @@ Feedback and contributions are always welcome! If you have any suggestions or fi
 | :fire: Desafio     | [Figma](https://www.figma.com/file/xHLPBeA2ujaXbBjHMK9xh7/CodeChella-%7C-Challenge-I---Front-end-2023)
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
-![image](https://github.com/ecureuill/codechella/assets/993369/c8596ae3-ad77-44a7-bb67-08cfdece031c)
+![image](https://github.com/ecureuill/codechella/assets/993369/c8596ae3-ad77-44a7-bb67-08cfdece031c#vitrinedev)
